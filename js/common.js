@@ -26,13 +26,13 @@ $(document).ready(function () {
     var windowWidth = $(document).width(),
         containerWidth = $('.container').width(),
         paddingContainer = ((windowWidth - containerWidth) / 2)
-    $('.testimonials, .formsection').css('padding-left', paddingContainer);
+    $('.testimonials, .formsection, .aboutplannig').css('padding-left', paddingContainer);
 
     $(window).resize(function () {
         var windowWidth = $(document).width(),
             containerWidth = $('.container').width(),
             paddingContainer = ((windowWidth - containerWidth) / 2)
-        $('.testimonials, .formsection').css('padding-left', paddingContainer);
+        $('.testimonials, .formsection, .aboutplannig').css('padding-left', paddingContainer);
     });
 
     // testimonials
@@ -75,7 +75,15 @@ $(document).ready(function () {
         $('.menucol').removeClass('show');
     })
 
-    
+    // accordeon
+    $('.accitem__header').click(function(){
+        $('.accitem__header').not($(this)).next('.accitem__body').slideUp();
+        $(this).next('.accitem__body').slideToggle();
 
+        $('.accitem__header').not($(this)).removeClass('plus');
+        // $(this).addClass('plus');
+        
+        $(this).toggleClass('plus');
+    });
 
 });

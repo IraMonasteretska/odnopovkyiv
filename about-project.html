@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про проєкт</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-9 menucol">
+                        <nav class="header__nav">
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Локації</a></li>
+                                <li><a href="#">Проекти</a></li>
+                                <li><a href="#">Відгуки</a></li>
+                                <li><a href="#">Контакти</a></li>
+                                <li><a href="tel:0672011807">(067) 201 18 07</a></li>
+                            </ul>
+                        </nav>
+                        <button class="closemenu">
+                            <img src="img/close.png" alt="closemenu">
+                        </button>
+                    </div>
+                    <button class="menubtn">
+                        <img src="img/menu.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="welcomescreen">
+                <div class="container mb25">
+                    <div class="row align-items-top">
+                        <div class="col-xl-8 col-lg-7">
+                            <p class="subtitle">з Баварської кладки</p>
+                            <h1>
+                                Будинок <span>120 м²</span>
+                            </h1>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="welcomescreen__right">
+                                <p class="loc">Білогородка</p>
+                                <p>
+                                    Одноповерховий будинок на 2 спальні, 2 санвузли, кладова, вітальня, кухня-столова,
+                                    гардероб, відкрита тераса і крита парковка на 1 автівку.
+                                </p>
+                                <div class="welcomescreen__circles justify-content-end">
+                                    <div class="link">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#ty">
+                                            Замовити проект
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcomescreen__video">
+                    <img src="img/projmainpic.jpg" alt="image">
+                </div>
+                <div class="projectinfo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="projectinfo__box">
+                                <p>Кількість кімнат</p>
+                                <span>3</span>
+                            </div>
+                            <div class="projectinfo__box">
+                                <p>Будинка</p>
+                                <span>120 м²</span>
+                            </div>
+                            <div class="projectinfo__box">
+                                <p>Площа ділянки</p>
+                                <span>400 м²</span>
+                            </div>
+                            <div class="projectinfo__box">
+                                <p>Площа кухні</p>
+                                <span>35 м²</span>
+                            </div>
+                            <div class="projectinfo__box">
+                                <p>Кількість поверхів</p>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutplannig">
+                <div class="flexbox">
+                    <div class="aboutplannig__left">
+                        <div class="aboutplannig__textblock">
+                            <p class="title">Про планування</p>
+                            <div class="descr">
+                                <p>
+                                    Планування будівництва одноповерхових будинків відбувається завжди під бажання
+                                    клієнта,
+                                    і для його зрічності, ми допомагаєм з вибором і завжди відкриті для допомоги.
+                                </p>
+                                <p>
+                                    <b>
+                                        Серед інших переваг пропонуємо максимальну комплектацію будинку:
+                                    </b>
+                                </p>
+                                <ul class="checklist">
+                                    <li>3 спальні</li>
+                                    <li>Кухня-студія</li>
+                                    <li>Вбиральня</li>
+                                    <li>Санвузол</li>
+                                    <li>Топкова</li>
+                                    <li>Тераса</li>
+                                    <li>Паркомісце</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutplannig__right">
+                        <img src="img/img1.jpg" alt="img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials ourprojects">
+                <div class="paddcontainer">
+                    <div class="testimonials__left">
+                        <h3 class="section-title">наші<br>
+                            роботи</h3>
+                        <div class="testimonials__arrows">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="testimonials__right">
+                        <div class="testimonialslider asortslider">
+                            <div class="swiper testimonials-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="asortslide asortslide_big">
+                                            <a data-fancybox="ourproj" data-src="img/ourpr1.jpg">
+                                                <div class="asortslide__box">
+                                                    <img class="slideimg" src="img/ourpr1.jpg" alt="img">
+                                                </div>
+                                            </a>
+                                            <div class="hidegallerybox">
+                                                <a data-fancybox="ourproj" data-src="img/ourpr2.jpg"></a>
+                                                <a data-fancybox="ourproj" data-src="img/ourpr3.jpg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="asortslide">
+                                            <a data-fancybox="ourproj1" data-src="img/ourpr2.jpg">
+                                                <div class="asortslide__box">
+                                                    <img class="slideimg" src="img/ourpr2.jpg" alt="img">
+                                                </div>
+                                            </a>
+                                            <div class="hidegallerybox">
+                                                <a data-fancybox="ourproj1" data-src="img/slide2.jpg"></a>
+                                                <a data-fancybox="ourproj1" data-src="img/slide3.jpg"></a>
+                                            </div>
+                                            <div class="asortslide__box">
+                                                <div class="testimonialbox testimonialbox__video">
+                                                    <div class="testimonialbox__body" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                        <div class="videoposter">
+                                                            <img class="videoposterimg" src="img/ourpr3.jpg" alt="img">
+                                                            <img src="img/play.svg" alt="open video" class="openvideo">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="asortslide">
+                                            <a data-fancybox="gallery1" data-src="img/slide2.jpg">
+                                                <div class="asortslide__box">
+                                                    <img class="slideimg" src="img/slide2.jpg" alt="img">
+                                                </div>
+                                            </a>
+                                            <div class="hidegallerybox">
+                                                <a data-fancybox="gallery1" data-src="img/slide2.jpg"></a>
+                                                <a data-fancybox="gallery1" data-src="img/slide3.jpg"></a>
+                                            </div>
+                                            <a data-fancybox="gallery2" data-src="img/slide3.jpg">
+                                                <div class="asortslide__box">
+                                                    <img class="slideimg" src="img/slide3.jpg" alt="img">
+                                                </div>
+                                            </a>
+                                            <div class="hidegallerybox">
+                                                <a data-fancybox="gallery2" data-src="img/slide2.jpg"></a>
+                                                <a data-fancybox="gallery2" data-src="img/slide3.jpg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infoincons ourprojects">
+                <div class="container">
+                    <div class="infoincons__box">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="infoincons__boxleft">
+                                    <h3>
+                                        Ми будуємо <br>
+                                        Будинки вашої мрії
+                                    </h3>
+                                    <a href="#" class="circlelink">
+                                        Замовити проект
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="infoincons__boxright">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Вапняна
+                                                штукатурка
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Панорамні<br>
+                                                вікна
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Тепла <br>
+                                                підлога
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Ландшафт,<br>
+                                                газон
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Стяжка, <br>
+                                                штукатурка
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <img src="img/checkicon.svg" alt="icon">
+                                            </span>
+                                            <p>
+                                                Парковка і відкатні
+                                                ворота
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="aboutplannig ourprojects">
+                <div class="flexbox">
+                    <div class="aboutplannig__left">
+                        <div class="aboutplannig__textblock">
+                            <p class="title">Детальніше про
+                                будинок</p>
+                            <div class="descr">
+                                <p>
+                                    Давно встановлено, що читач відволікатиметься на читабельний вміст сторінки,
+                                    дивлячись на її макет. Сенс використання Lorem Ipsum полягає в тому, що він має
+                                    більш-менш нормальний розподіл літер, на відміну від використання «Вміст тут, вміст
+                                    тут», що робить його схожим на читабельну англійську мову.
+                                </p>
+                                <p>
+                                    Багато пакетів для настільних видавництв і редакторів веб-сторінок тепер
+                                    використовують Lorem Ipsum як текст моделі за замовчуванням, а пошук за запитом
+                                    «lorem ipsum» відкриє багато веб-сайтів, які ще знаходяться в зародковому стані.
+                                    Протягом багатьох років розвивалися різні версії, іноді випадково, іноді навмисно
+                                    (введений гумор тощо).
+                                </p>
+                            </div>
+                            <a href="#" class="circlelink">
+                                Залишити заявку
+                            </a>
+                        </div>
+                    </div>
+                    <div class="aboutplannig__right">
+                        <img src="img/img2.jpg" alt="img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="faq__left">
+                                <h3 class="section-title">
+                                    Популярні питання<br>
+                                    та відповіді
+                                </h3>
+                                <div class="descr">
+                                    <p>
+                                        Якщо не знайшли відповідь на своє запитання - задайте його нашому менеджеру.
+                                    </p>
+                                </div>
+                                <a href="#" class="circlelink">
+                                    Залишити заявку
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="faq__accordeon">
+                                <div class="accitem show">
+                                    <div class="accitem__header plus">
+                                        <p>Яке планування котеджу?</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="accitem__body">
+                                        <div class="textwrap">
+                                            <p>
+                                                Планування під клієнта: кухня-студія, вбиральня, вбиральня, санвузол,
+                                                топкова, 3 або 4 спальні.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accitem">
+                                    <div class="accitem__header">
+                                        <p>з яких матеріалів будували?</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="accitem__body">
+                                        <div class="textwrap">
+                                            <p>
+                                                Планування під клієнта: кухня-студія, вбиральня, вбиральня, санвузол,
+                                                топкова, 3 або 4 спальні.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contactsect">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-md-3">
+                            <h3 class="section-title">Контакти</h3>
+                        </div>
+                        <div class="col-xl-9 col-md-9">
+                            <div class="flexbox">
+                                <ul class="contactsect__info">
+                                    <li><a href="tel:0672011807">(067) 201 18 07</a></li>
+                                    <li>Пн-Нд | 9:00 - 20:00</li>
+                                </ul>
+                                <ul class="contactsect__soc">
+                                    <li><a href="#" target="_blank"><img src="img/icon-youtube.svg" alt="youtube"></a>
+                                    </li>
+                                    <li><a href="#" target="_blank"><img src="img/icon-facebook.svg" alt="facebook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="footerlogowrap">
+                            <a href="#" class="footer__logo"><img src="img/logo-footer.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Локації</a></li>
+                                <li><a href="#">Проекти</a></li>
+                                <li><a href="#">Відгуки</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </nav>
+                        <a href="#" class="totop"><img src="img/totop.svg" alt="to top"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade videomodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="videomodalwrap ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/OqUibYhxNlQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade tymodal" id="ty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="title">Дякуюєм, за зявку!</p>
+                <div class="descr">
+                    <p>
+                        Ваша заявка надіслана, невдовзі ми з вами зв'яжемося
+                    </p>
+                </div>
+                <a href="#" class="tylink">
+                    Головна
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
