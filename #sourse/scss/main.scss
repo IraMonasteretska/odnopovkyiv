@@ -12,7 +12,7 @@ html {
     height: 100%;
 }
 
-.main {
+main.main {
     flex: 1 1 auto;
     padding-top: 105px;
 }
@@ -430,7 +430,7 @@ html {
 
 // assortfloat
 .assortfloat {
-    padding: 220px 0 100px;
+    padding: 220px 0 30px;
 }
 
 .asortslide__box {
@@ -547,7 +547,7 @@ html {
 // testimonials
 .testimonials {
     position: relative;
-    padding: 80px 0 100px;
+    padding: 150px 0 100px;
 }
 
 .paddcontainer {
@@ -1030,7 +1030,11 @@ html {
     }
 
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 
 
@@ -1247,7 +1251,7 @@ html {
 }
 
 @media(max-width:991.8px) {
-    .main {
+    main.main {
         padding-top: 85px;
     }
 
@@ -1529,6 +1533,15 @@ html {
 
     .assortfloat {
         padding-bottom: 0;
+    }
+
+
+    .maininfo {
+        padding-top: 80px;
+    }
+
+    .testimonials {
+        padding-top: 80px;
     }
 }
 

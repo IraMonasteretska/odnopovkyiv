@@ -86,4 +86,58 @@ $(document).ready(function () {
         $(this).toggleClass('plus');
     });
 
+
+    // menu
+
+    $('.scrollnav .scrollitem a').on( 'click', function(){ 
+        $('.menucol').removeClass('show');
+        var el = $(this);
+        var dest = el.attr('href'); 
+        if(dest !== undefined && dest !== '') { // check existence
+            $('html').animate({ 
+                scrollTop: $(dest).offset().top - 80 // scroll to...
+            }, 500 // speed
+            );
+        }
+        return false;
+    });
+    // footer
+    $('.footerscrollnav .scrollitem a').on( 'click', function(){ 
+        var el = $(this);
+        var dest = el.attr('href'); 
+        if(dest !== undefined && dest !== '') { // check existence
+            $('html').animate({ 
+                scrollTop: $(dest).offset().top - 80 // scroll to...
+            }, 500 // speed
+            );
+        }
+        return false;
+    });
+
+
+
+
+
+
+
+    $('.scrolltoform').on( 'click', function(){ 
+        var el = $(this);
+        var dest = el.attr('href'); 
+        if(dest !== undefined && dest !== '') { // check existence
+            $('html').animate({ 
+                scrollTop: $(dest).offset().top - 80 // scroll to...
+            }, 500 // speed
+            );
+        }
+        return false;
+    });
+
+
+
+
 });
+
+
+
+
+

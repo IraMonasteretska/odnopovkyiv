@@ -1,0 +1,383 @@
+.projects {
+    padding: 56px 0 100px 0;
+
+    h1 {
+        text-align: center;
+        margin: 0 0 70px 0;
+        color: #fff;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 130%;
+    }
+
+    .row {
+        margin-left: -20px;
+        margin-right: -20px;
+
+        .col-lg-6 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.projects__block {
+    height: 257px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #222121 -5.19%, #222121 -2.15%, rgba(34, 33, 33, 0.88) 5.02%, rgba(34, 33, 33, 0.79) 11.41%, rgba(34, 33, 33, 0.32) 25.19%, rgba(34, 33, 33, 0) 33.89%);
+    }
+
+    .projects__name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        padding: 16px 30px;
+
+        p {
+            margin: 0;
+            width: 100%;
+            max-width: calc(100% - 44px);
+            flex: 0 0 calc(100% - 44px);
+            color: #FFFFFF;
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 159%;
+            height: 42px;
+            overflow: hidden;
+            position: relative;
+
+            span {
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .square {
+                transition: 0.3s;
+                transform: translateY(-42px);
+            }
+
+            .name {
+                transition: 0.3s;
+            }
+        }
+
+        svg {
+            width: 100%;
+            max-width: 44px;
+            flex: 0 0 44px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &:hover {
+        .projects__name {
+            p {
+                color: #E25100;
+
+                .square {
+                    transform: translateY(0);
+                }
+
+                .name {
+                    transform: translateY(42px);
+                }
+            }
+
+            svg {
+                .svgcolor {
+                    fill: #E25100;
+                }
+            }
+        }
+    }
+}
+
+
+// modal
+.projectsmodal {
+    .modal-content {
+        border-radius: 0;
+    }
+
+    .modal-dialog {
+        max-width: 1420px;
+    }
+
+    .modal-content {
+        background: #414141;
+        border: none;
+    }
+
+
+}
+
+.projectsmodal__top {
+    padding: 80px 80px 60px 80px;
+
+    .title {
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 159%;
+    }
+}
+
+.projectsmodal__topleft {
+    width: 100%;
+    max-width: calc(100% - 433px);
+    flex: 0 0 calc(100% - 433px);
+
+    .descr {
+        max-width: 587px;
+
+        p {
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 150%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.projectsmodal__topright {
+    width: 100%;
+    max-width: 433px;
+    flex: 0 0 433px;
+
+    .locations__link {
+        color: #FFFFFF;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 159%;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            color: rgba(226, 81, 0, 0.9);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 159%;
+            text-transform: lowercase;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 12px;
+            width: 100%;
+            background: url('../img/linecirc.png') no-repeat top right / 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1399.8px) {
+    .projectsmodal .modal-dialog {
+        max-width: 1100px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .projectsmodal .modal-dialog {
+        max-width: 900px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .projects h1 {
+        margin-bottom: 50px;
+        font-size: 32px;
+    }
+
+    .projects__block .projects__name p {
+        overflow: inherit;
+
+        span {
+            transform: none !important;
+            display: inline-block;
+            position: relative;
+        }
+    }
+
+    .projects__block .projects__name p .square {
+        margin-left: 10px;
+    }
+
+    .projectsmodal .modal-dialog {
+        max-width: calc(100% - 30px);
+    }
+
+    .projectsmodal__topleft,
+    .projectsmodal__topright {
+        max-width: 100%;
+        flex:  0 0 100%;
+    }
+
+    .projectsmodal__topleft {
+        margin-bottom: 35px;
+    }
+
+    .projectsmodal__topright .locations__link:after {
+        height: 16px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .projects__block {
+        height: 200px;
+    }
+
+    .projects h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .main {
+        padding-top: 70px;
+    }
+
+    .projects {
+        padding: 40px 0 50px;
+    }
+
+    .projects__block .projects__name {
+        padding: 10px 20px;
+    }
+
+    .projects .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .projects .row .col-lg-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .projects__block {
+        margin-bottom: 20px;
+    }
+
+    .projects__block .projects__name p {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .projects__block .projects__name svg {
+        width: 30px;
+        height: 30px;
+        margin-top: -3px;
+    }
+
+    .projectsmodal__top {
+        padding: 30px;
+    }
+
+    .projectsmodal__top .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .projectsmodal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .projectsmodal__topright .locations__link {
+        font-size: 16px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .projectsmodal__topright .locations__link:after {
+        height: 12px;
+    }
+
+    .projectsmodal .mySwiper {
+        padding-bottom: 70px;
+    }
+
+    .projectsmodal .swiper-button-next, .projectsmodal .swiper-button-prev {
+        bottom: 30px;
+    }
+
+    .projectsmodal .swiper-button-next {
+        right: 30px;
+    }
+
+    .projectsmodal .swiper-button-prev {
+        right: 80px;
+    }
+
+}

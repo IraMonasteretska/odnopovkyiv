@@ -319,6 +319,171 @@
     padding-right: 40px;
 }
 
+.welcomescreen .price {
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 159%;
+
+    .orangetext {
+        color: #E25100;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .litttext {
+        font-size: 30px;
+        line-height: 159%;
+    }
+}
+
+.welcomescreen.abpr h1 {
+    margin-bottom: 35px;
+}
+
+.locations {
+    padding: 50px 0 60px;
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    .locations__link {
+        margin-bottom: 39px;
+        overflow: hidden;
+        position: relative;
+
+        p {
+            margin: 0;
+            display: block;
+            color: #FFFFFF;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 159%;
+            text-decoration: none;
+            transition: 0.3s;
+            padding-bottom: 10px;
+
+            span {
+                color: rgba(226, 81, 0, 0.9);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 138%;
+                font-style: italic;
+                text-transform: lowercase;
+            }
+
+            // &:hover {
+            //     color: #E25100;
+
+            //     &+svg {
+            //         path, circle {
+            //             stroke: #E25100;
+            //         }
+            //     }
+            // }
+        }
+
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            path, circle {
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.locations .row {
+    justify-content: space-between;
+}
+
+.locationscol {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 368px;
+}
+
+.fancybox__container {
+    z-index: 9999;
+}
+
+.asortslide__box.removeshadow {
+    &::after {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.projectsmodal .mySwiper  {
+    padding-bottom: 120px;
+}
+
+.projectsmodal .swiper-button-next, .projectsmodal  .swiper-button-prev {
+    bottom: 60px;
+    top: initial;
+    -webkit-transform: none;
+    transform: none;
+    background: url(../img/sliderarrow.svg) no-repeat center/100% 100%;
+    width: 38px;
+    height: 38px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+    &::after {
+        display: none;
+    }
+}
+
+.projectsmodal .swiper-button-prev {
+    transform: rotate(180deg);
+    right: 130px;
+    left: initial;
+}
+
+.projectsmodal .swiper-button-next {
+    right: 80px;
+    left: initial;
+}
+
+.projectsmodal .modal-dialog {
+    margin-top: 100px;
+}
+
+.projectsmodal .btn-close {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    opacity: 1;
+    background: transparent;
+    background-image: url(../img/closemodal.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -347,6 +512,21 @@
     .aboutplannig.ourprojects {
         padding-bottom: 80px;
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 
 @media(max-width:1199.8px) {
@@ -424,6 +604,22 @@
         margin-bottom: 30px;
     }
 
+    .welcomescreen.abpr {
+        .welcomescreen__right .welcomescreen__circles {
+            justify-content: flex-start !important;
+        }
+    }
+
+    .locationscol {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .locations {
+        padding-bottom: 0;
+    }
+
 
 }
 
@@ -446,7 +642,11 @@
         height: 180px;
     }
 
-
+    .locationscol {
+        width: 100%;
+        max-width: 380px;
+        flex: 0 0 380px;
+    }
 
 
 }
@@ -481,7 +681,7 @@
     .testimonials.ourprojects {
         padding-bottom: 0;
     }
-    
+
     .infoincons.ourprojects .infoincons__box .infoincons__boxleft h3 {
         margin-bottom: 20px;
     }
@@ -512,4 +712,29 @@
         padding-bottom: 10px;
     }
 
+    .locations .locations__link p {
+        font-size: 18px;
+    }
+
+    .locations .locations__link {
+        margin-bottom: 20px;
+    }
+
+    .locationscol {
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .locations h3 {
+        margin-bottom: 40px;
+    }
+
+
+}
+
+@media(max-width:385.8px) {
+    .locationscol {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
