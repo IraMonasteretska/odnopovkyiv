@@ -114,12 +114,6 @@ $(document).ready(function () {
         return false;
     });
 
-
-
-
-
-
-
     $('.scrolltoform').on( 'click', function(){ 
         var el = $(this);
         var dest = el.attr('href'); 
@@ -132,6 +126,7 @@ $(document).ready(function () {
         return false;
     });
 
+  
 
 
 
