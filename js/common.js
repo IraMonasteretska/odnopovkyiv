@@ -135,6 +135,37 @@ $(document).ready(function () {
 
 
 
+    // locatins tab(click on city)
+    $('.locations__top-tab').on('click', function () {
+        var dataClass = $(this).attr('data-map');
+        console.log(dataClass);
+        $('.locations__item').removeClass('active-tab').hide();
+        $('.locations__bottom').removeClass('active-tab').hide();
+        $('.locations__top-tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+    // locatins tab(click on address)
+    $('.locations__bottom-tab').on('click', function () {
+        var dataClass = $(this).attr('data-loc');
+        console.log(dataClass);
+        $('.locations__item').removeClass('active-tab').hide();
+        $('.locations__bottom-wraper').removeClass('active-tab').hide();
+        $('.locations__bottom-tab').removeClass('active');
+        $(this).addClass('active');
+        $('.' + dataClass).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+
+    // show first locations
+    $('.locations__top-row').find('.locations__top-tab').first().each(function () {
+        $(this).trigger('click');
+    });
+
+
 });
 
 
