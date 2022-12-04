@@ -43,6 +43,10 @@ header.header {
                 &:hover {
                     color: #E25100;
                 }
+
+                &.active {
+                    color: #E25100;
+                }
             }
         }
     }
