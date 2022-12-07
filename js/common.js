@@ -75,25 +75,25 @@ $(document).ready(function () {
     })
 
     // accordeon
-    $('.accitem__header').click(function(){
+    $('.accitem__header').click(function () {
         $('.accitem__header').not($(this)).next('.accitem__body').slideUp();
         $(this).next('.accitem__body').slideToggle();
 
         $('.accitem__header').not($(this)).removeClass('plus');
         // $(this).addClass('plus');
-        
+
         $(this).toggleClass('plus');
     });
 
 
     // menu
 
-    $('.scrollnav .scrollitem a').on( 'click', function(){ 
+    $('.scrollnav .scrollitem a').on('click', function () {
         $('.menucol').removeClass('show');
         var el = $(this);
-        var dest = el.attr('href'); 
-        if(dest !== undefined && dest !== '') { // check existence
-            $('html').animate({ 
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') { // check existence
+            $('html').animate({
                 scrollTop: $(dest).offset().top - 80 // scroll to...
             }, 500 // speed
             );
@@ -101,11 +101,11 @@ $(document).ready(function () {
         return false;
     });
     // footer
-    $('.footerscrollnav .scrollitem a').on( 'click', function(){ 
+    $('.footerscrollnav .scrollitem a').on('click', function () {
         var el = $(this);
-        var dest = el.attr('href'); 
-        if(dest !== undefined && dest !== '') { // check existence
-            $('html').animate({ 
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') { // check existence
+            $('html').animate({
                 scrollTop: $(dest).offset().top - 80 // scroll to...
             }, 500 // speed
             );
@@ -113,11 +113,11 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.scrolltoform').on( 'click', function(){ 
+    $('.scrolltoform').on('click', function () {
         var el = $(this);
-        var dest = el.attr('href'); 
-        if(dest !== undefined && dest !== '') { // check existence
-            $('html').animate({ 
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') { // check existence
+            $('html').animate({
                 scrollTop: $(dest).offset().top - 80 // scroll to...
             }, 500 // speed
             );
@@ -125,7 +125,7 @@ $(document).ready(function () {
         return false;
     });
 
-  
+
 
 
 
@@ -155,6 +155,25 @@ $(document).ready(function () {
     // show first locations
     $('.locations__top-row').find('.locations__top-tab').first().each(function () {
         $(this).trigger('click');
+    });
+
+
+    // local storage script
+    $('.cities a').on('click', function () {
+        localStorage.productForm = $(this).attr('data-city');
+        console.log(localStorage.productForm);
+    });
+    console.log(localStorage.productForm);
+
+    $('.locations__top-tab').each(function () {
+        if ($(this).attr('data-map') == localStorage.productForm) {
+            $(this).addClass('active');
+            $(this).trigger('click');
+        }
+    });
+
+    $('.locations__top-tab').on('click', function () {
+        localStorage.clear();
     });
 
 

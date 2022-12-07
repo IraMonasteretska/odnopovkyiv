@@ -261,6 +261,13 @@
 
 // RESPONSIVE
 
+@media (max-width:1400px) {
+    .locations__bottom-tab {
+        width: 340px;
+    }
+}
+
+
 @media (max-width:991.8px) {
     .locations__title h1 {
         font-size: 32px;
