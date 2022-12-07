@@ -152,7 +152,6 @@ $(document).ready(function () {
         return false;
     });
 
-
     // show first locations
     $('.locations__top-row').find('.locations__top-tab').first().each(function () {
         $(this).trigger('click');
