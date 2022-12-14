@@ -516,7 +516,9 @@ main.main {
 }
 
 .asortslider {
-    .mySwiper {
+
+    .mySwiper,
+    .apartments-slider {
         padding-top: 123px;
     }
 
@@ -541,6 +543,21 @@ main.main {
 
     .swiper-button-next {
         left: 53px;
+    }
+}
+
+.assortfloat.appartment {
+    padding-top: 180px;
+}
+
+.apartments-slider {
+
+    .asortslide__box:after {
+        display: none;
+    }
+
+    .asortslide.asortslide_big .asortslide__box {
+        height: 718px;
     }
 }
 
@@ -1030,15 +1047,24 @@ main.main {
     }
 
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
 
 @media(max-width:1399.8px) {
+
+    .apartments-slider .asortslide.asortslide_big .asortslide__box {
+        height: 560px;
+    }
+
+    .assortfloat.appartment {
+        padding-top: 60px;
+    }
 
     .welcomescreen__right .welcomescreen__circles div {
         height: 100px;
@@ -1063,7 +1089,8 @@ input::-webkit-inner-spin-button {
         margin-bottom: 50px;
     }
 
-    .asortslider .mySwiper {
+    .asortslider .mySwiper,
+    .asortslider .apartments-slider {
         padding-top: 100px;
     }
 
@@ -1110,12 +1137,6 @@ input::-webkit-inner-spin-button {
     }
 
 
-
-
-
-
-
-
     .welcomescreen h1 {
         font-size: 52px;
     }
@@ -1155,6 +1176,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media(max-width:1199.8px) {
+
+    .apartments-slider .asortslide.asortslide_big .asortslide__box {
+        height: 500px;
+    }
 
     .maininfo__tableinfo>div .bigtext {
         font-size: 28px;
@@ -1251,6 +1276,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media(max-width:991.8px) {
+    .apartments-slider .asortslide.asortslide_big .asortslide__box {
+        height: 350px;
+    }
     main.main {
         padding-top: 85px;
     }
@@ -1396,6 +1424,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media(max-width:767.8px) {
+    .apartments-slider .asortslide.asortslide_big .asortslide__box {
+        height: 260px;
+    }
     .asortslide__box {
         height: 180px;
     }

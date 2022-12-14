@@ -161,9 +161,7 @@ $(document).ready(function () {
     // local storage script
     $('.cities a').on('click', function () {
         localStorage.productForm = $(this).attr('data-city');
-        console.log(localStorage.productForm);
     });
-    console.log(localStorage.productForm);
 
     $('.locations__top-tab').each(function () {
         if ($(this).attr('data-map') == localStorage.productForm) {
@@ -174,6 +172,17 @@ $(document).ready(function () {
 
     $('.locations__top-tab').on('click', function () {
         localStorage.clear();
+    });
+
+    // testimonials
+    var swiper = new Swiper(".apartments-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        speed: 800,
     });
 
 
